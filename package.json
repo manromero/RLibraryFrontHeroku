@@ -8,13 +8,13 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build",
-    "start": "node server.js"
+	"postinstall": "ng build",
+	"start": "node server.js" 
   },
   "private": true,
   "dependencies": {
+	"@angular/cli": "1.2.3",
     "@angular/animations": "^4.0.0",
-    "@angular/cli": "1.1.2",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/core": "^4.0.0",
@@ -52,7 +52,7 @@
     "typescript": "~2.3.3"
   },
   "engines": {
-    "node": "6.11.1",
-    "npm": "3.10.9"
+	"node": "6.11.1",
+	"npm": "3.10.9"
   }
 }
