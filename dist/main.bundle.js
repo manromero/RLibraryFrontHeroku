@@ -638,6 +638,15 @@ var BooksComponent = (function () {
                 if (!_this.bookSaved) {
                     _this.errorSaveBook = 'Se ha producido un error al guardar la seriea';
                 }
+                else {
+                    // Actualizamos el listado de libros
+                    _this.bookService.findAllByTitleAsc().subscribe(function (data2) {
+                        _this.listFullBook = data2;
+                        _this.filterBooksByIdBookTypeAndTitle();
+                    }, function (error) {
+                        console.log(error);
+                    });
+                }
             }, function (error) {
                 _this.loadingBook = false;
                 _this.bookModified = false;
